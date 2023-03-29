@@ -184,11 +184,11 @@ nav {
   background-size: cover;
   z-index: -1;
   transform: translate(-50%,-50%);
-  background-position: center top;
 }
 
 .goods-slider .bg{
   background:  linear-gradient(rgba(0, 0, 0, .3),rgba(0, 0, 0, .3)), #222 url(../img/bg_soup.jpg) no-repeat;
+  background-position: center top;
 }
 
 .goods-slider .wrapper {
@@ -358,12 +358,12 @@ h3 {
   padding: 60px 0;
   text-align: center;
   background-size: cover;
-  background-position: center top;
   overflow: hidden;
 }
 
 .gift .bg{
   background: linear-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0, .5)), #222 url(../img/bg_gift.jpg) no-repeat;
+  background-position: center top;
 }
 
 .gift p {
