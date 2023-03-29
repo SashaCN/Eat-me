@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
   font-size: 14rem;
   /* font-family: 'Roboto Slab', serif; */
@@ -168,11 +169,26 @@ nav {
 
 .goods-slider {
   position: relative;
-  font-size: 18rem;
   padding: 108px 0;
-  background: #222 url(../img/bg_soup.jpg);
-  background-size: cover;
+  font-size: 18rem;
   color: #fff;
+  overflow: hidden;
+}
+
+.bg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  z-index: -1;
+  transform: translate(-50%,-50%);
+  background-position: center top;
+}
+
+.goods-slider .bg{
+  background:  linear-gradient(rgba(0, 0, 0, .3),rgba(0, 0, 0, .3)), #222 url(../img/bg_soup.jpg) no-repeat;
 }
 
 .goods-slider .wrapper {
@@ -338,10 +354,16 @@ h3 {
 /* -------------------------------------------------------------------------- */
 
 .gift {
+  position: relative;
   padding: 60px 0;
   text-align: center;
-  background: #222 url(../img/bg_gift.jpg) center;
   background-size: cover;
+  background-position: center top;
+  overflow: hidden;
+}
+
+.gift .bg{
+  background: linear-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0, .5)), #222 url(../img/bg_gift.jpg) no-repeat;
 }
 
 .gift p {
