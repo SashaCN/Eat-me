@@ -15,6 +15,11 @@ body {
   /* font-family: 'Roboto Slab', serif; */
 }
 
+.scroll-wrap,
+.scroll-content{
+  will-change: transform;
+}
+
 h1,
 h2,
 h3,

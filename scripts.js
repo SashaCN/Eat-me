@@ -11,7 +11,7 @@ function parallaxBg (e)
 {
   height = e.offsetHeight;
   if (window.scrollY > e.offsetTop - height) {
-      e.style.backgroundPositionY = `-${window.scrollY/15}px`;
+      e.style.backgroundPositionY = `-${window.scrollY/5}px`;
   }
   return false;
 }
